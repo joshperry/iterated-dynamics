@@ -13,8 +13,10 @@ install:
   - sudo apt-get install xutils-dev libx11-dev cmake g++-4.8 cppcheck
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 90
   - g++ --version
+  - cppcheck --version
 
 script:
+  - cppcheck --enable=all --error-exitcode=1 -I headers --force --std=c++11
   - mkdir build
   - cd build
   - cmake -G "Unix Makefiles" ..
