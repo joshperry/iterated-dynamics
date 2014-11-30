@@ -16,7 +16,7 @@ install:
   - cppcheck --version
 
 script:
-  - cppcheck --enable=all --error-exitcode=1 -I headers --force --std=c++11
+  - cppcheck --enable=all --error-exitcode=1 -I headers --force --std=c++11 hc common headers unix win32
   - mkdir build
   - cd build
   - cmake -G "Unix Makefiles" ..
