@@ -20,4 +20,5 @@ script:
   - cd build
   - cmake -G "Unix Makefiles" ..
   - make
+  - cd ..
   - cppcheck --enable=all -I headers --force --std=c++11 hc common headers unix win32
