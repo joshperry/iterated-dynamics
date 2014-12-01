@@ -21,4 +21,4 @@ script:
   - cmake -G "Unix Makefiles" ..
   - make
   - cd ..
-  - cppcheck --enable=all -I headers --force --std=c++11 hc common headers unix win32
+  - if [ $CC = "gcc" ]; then cppcheck --enable=all -I headers --force --std=c++11 hc common headers unix win32; fi
