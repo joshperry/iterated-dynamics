@@ -4,6 +4,7 @@ FRACTALS.C, i.e. which are non-fractal-specific fractal engine subroutines.
 */
 #include <vector>
 
+#include <float.h>
 #include <limits.h>
 #include <memory.h>
 #include <stdarg.h>
