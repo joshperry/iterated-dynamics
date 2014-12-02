@@ -14,6 +14,8 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #include "port.h"
 #define INCLUDE_COMMON  /* tell helpcom.h to include common code */
@@ -24,7 +26,6 @@
 #define FNSPLIT _splitpath
 
 #ifdef XFRACT
-
 #ifndef HAVESTRI
 extern int stricmp(const char *, const char *);
 extern int strnicmp(const char *, const char *, int);
