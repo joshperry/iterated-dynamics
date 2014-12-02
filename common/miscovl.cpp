@@ -4,8 +4,10 @@
 #include <algorithm>
 #include <vector>
 
-#include <string.h>
 #include <ctype.h>
+#include <float.h>
+#include <stdarg.h>
+#include <string.h>
 #include <time.h>
 
 #ifndef XFRACT
@@ -16,9 +18,6 @@
 #include <io.h>
 #endif
 
-#include <stdarg.h>
-
-/* see Fractint.c for a description of the "include"  hierarchy */
 #include "port.h"
 #include "prototyp.h"
 #include "fractype.h"
